@@ -1,8 +1,13 @@
+.sectionTitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
 
+.sectionContainer {
+  margin: 3rem;
+}
 
-
-
-
-@media screen and (min-width: 40rem) {
-  
+.sectionContentContainer {
+  padding: 2rem;
 }

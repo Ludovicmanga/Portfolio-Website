@@ -1,0 +1,38 @@
+.profilPicContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.profilPic {
+  border-radius: 15px;
+  height: 14rem;
+  width: 14rem;
+}
+
+.myName {
+  text-align: center;
+  margin: 1rem 0 0 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.myJob {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.myDescription {
+  text-align: justify;
+}
+
+.socialNetworkicon {
+  margin: 1rem 0.5rem 0 0;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 40rem) {
+}
