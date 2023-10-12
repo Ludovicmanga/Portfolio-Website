@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 84%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profilPicContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.profilPic {
+  border-radius: 15px;
+  height: 17rem;
+  width: 17rem;
+}
+
+.myName {
+  text-align: center;
+  margin: 1rem 0 0 0;
+  font-weight: 600;
+}
+
+.myNameText {
+  font-size: 2.3rem;
+}
+
+.myNameEmoji {
+  font-size: 1.7rem;
+}
+
+.myJob {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.myDescription {
+  text-align: justify;
+}
+
+.socialNetworkicon {
+  margin: 1rem 0.8rem 0 0;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .myName {
+    font-size: 2.6rem;
+  }
+
+  .myJob {
+    font-size: 1.4rem;
+  }
+  
+  .profilPic {
+    height: 26rem;
+    width: 26rem;
+  }
+
+  .wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .textContainer {
+    padding: 0.5rem 3rem;
+  }
+
+  .myDescription {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+  }
+}

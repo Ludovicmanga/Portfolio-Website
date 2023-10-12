@@ -1,0 +1,62 @@
+.imgContainer {
+  display: none;
+}
+
+.textDetails {
+  display: none;
+}
+
+.textBody {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 40rem) {
+  .container {
+    display: flex;
+    padding: 0.5rem 9rem;
+  }
+
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+  }
+
+  .img {
+    height: 18rem;
+    width: 18rem;
+  }
+
+  .codingImg {
+    padding: 0rem;
+  }
+
+  .experiencesImg {
+    padding: 1.5rem;
+  }
+
+  .textContainer {
+    width: 70%;
+    padding: 1.5rem 0 0 0;
+    margin: 0 0 0 7rem;
+  }
+
+  .textDetails {
+    display: flex;
+    font-size: 1.2rem;
+    padding: 0 6rem 0 0;
+  }
+
+  .btnContainer {
+    margin: 3rem 0 0 0;
+    justify-content: flex-start;
+  }
+}

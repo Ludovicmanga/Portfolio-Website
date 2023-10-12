@@ -1,95 +1,65 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import BasicBloc from "./components/BasicBloc/BasicBloc";
+import MyStack from "./components/MyStack/MyStack";
+import MyYoutubeChannel from "./components/MyYoutubeChannel/MyYoutubeChannel";
+import WebsiteHero from "./components/WebsiteHero/WebsiteHero";
+import styles from "./page.module.css";
+import portfolioImg from "@/public/codingImg.svg";
+import experiencesImg from "@/public/popup.svg";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <div className={styles.sectionContainer}>
+        <WebsiteHero />
+      </div>
+      <div className={styles.sectionContainer}>
+        <div className={styles.sectionTitle} id="my-stack">
+          Ma stack
+        </div>
+        <div className={styles.sectionContentContainer}>
+          <MyStack />
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.sectionContainer}>
+        <div className={styles.sectionTitle} id="my-experiences">
+          Mes expériences & ma formation
+        </div>
+        <div className={styles.sectionContentContainer}>
+          <BasicBloc
+            descriptionText="De formation commerciale, je me suis reconverti en 2020 dans le
+            développement web, notamment grâce à une formation certifiante
+            Openclassrooms. Depuis, j'ai cofondé une startup, dans laquelle j'ai
+            été développeur fullstack."
+            btnText="Voir mes expériences"
+            img={experiencesImg}
+            type="experience"
+          />
+        </div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles.sectionContainer}>
+        <div className={styles.sectionTitle} id="youtube">
+          Ma chaine Youtube
+        </div>
+        <div className={styles.sectionContentContainer}>
+          <MyYoutubeChannel />
+        </div>
       </div>
-    </main>
-  )
+      <div className={styles.sectionContainer}>
+        <div className={styles.sectionTitle} id="portfolio">
+          Mon portfolio
+        </div>
+        <div className={styles.sectionContentContainer}>
+          <BasicBloc
+            descriptionText="Parce que c'est en forgeant qu'on devient forgeron, pratiquer est
+          essentiel. C'est pourquoi, je code en permanence, et réalise des
+          projets qui me tiennent à coeur, que ce soit dans le cadre
+          professionnel ou personnel. Que ce soit seul, ou en groupe."
+            btnText="Voir mon portfolio"
+            img={portfolioImg}
+            type="portfolio"
+          />
+        </div>
+      </div>
+    </div>
+  );
 }

@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: black;
+}
+
+.logosSectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stackLogo {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.stackLogo img {
+  width: 2rem;
+  height: auto;
+}
+
+@media screen and (min-width: 40rem) {
+
+  .container {
+    margin: 1.5rem 13rem;
+  }
+
+  .logosSectionContainer {
+    width: 90%;
+  }
+
+  .lambdaStackLogo img {
+    width: 4rem;
+    height: auto;
+  }
+  
+  .cssOrCStackLogo img {
+    width: 3rem;
+    height: auto;
+  }
+}
