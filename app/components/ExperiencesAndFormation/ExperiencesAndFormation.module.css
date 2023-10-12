@@ -1,5 +1,48 @@
+.imgContainer {
+  display: none;
+}
+
+.textDetails {
+  display: none;
+}
+
 .btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 4rem) {
+  .container {
     display: flex;
-    align-items: center;
+    padding: 0 4.5rem;
+  }
+
+  .imgContainer {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 35%;
+  }
+
+  .img {
+    border-radius: 15px;
+    height: 18rem;
+    width: 18rem;
+  }
+
+  .textContainer {
+    width: 65%;
+    padding: 2rem 0 2rem 2rem;
+  }
+
+  .textDetails {
+    display: flex;
+    font-size: 1.6rem;
+  }
+
+  .btnContainer {
+    margin: 2rem 0 0 0;
+    justify-content: flex-start;
+  }
 }

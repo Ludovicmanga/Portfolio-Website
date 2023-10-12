@@ -24,7 +24,7 @@ const MyStack = (props: Props) => {
     cLogo,
   ];
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.logosSectionContainer}>
         {logos.map((logo) => (
           <Image

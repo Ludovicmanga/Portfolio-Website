@@ -12,27 +12,27 @@ export default function Home() {
         <WebsiteHero />
       </div>
       <div className={styles.sectionContainer}>
-        <div className={styles.sectionTitle}>Ma stack</div>
+        <div className={styles.sectionTitle}>🔌 Ma stack</div>
         <div className={styles.sectionContentContainer}>
           <MyStack />
         </div>
       </div>
       <div className={styles.sectionContainer}>
         <div className={styles.sectionTitle}>
-          Mes expériences & ma formation
+          📖 Mes expériences & ma formation
         </div>
         <div className={styles.sectionContentContainer}>
           <ExperiencesAndFormation />
         </div>
       </div>
       <div className={styles.sectionContainer}>
-        <div className={styles.sectionTitle}>Ma chaine Youtube</div>
+        <div className={styles.sectionTitle}>📹 Ma chaine Youtube</div>
         <div className={styles.sectionContentContainer}>
           <MyYoutubeChannel />
         </div>
       </div>
       <div className={styles.sectionContainer}>
-        <div className={styles.sectionTitle}>Mon portfolio</div>
+        <div className={styles.sectionTitle}>💎 Mon portfolio</div>
         <div className={styles.sectionContentContainer}>
           <MyPortfolio />
         </div>
