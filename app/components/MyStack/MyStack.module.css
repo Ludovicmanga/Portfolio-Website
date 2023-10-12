@@ -1,3 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: black;
+}
+
 .logosSectionContainer {
   display: flex;
   justify-content: center;
@@ -5,26 +13,37 @@
   flex-wrap: wrap;
 }
 
-.stackLogo {
+.stackLogo, .cssOrCStackLogo {
   margin: 1rem;
-  width: auto;
-  height: auto;
-  max-width: 3rem;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.stackLogo img {
+  width: 2rem;
+  height: auto;
+}
+
+.cssOrCStackLogo img {
+  width: 2rem;
+  height: auto;
 }
 
 @media screen and (min-width: 40rem) {
-  .logosSectionContainer {
-    width: 60%;
+
+  .container {
+    margin: 1.5rem 13rem;
   }
 
-  .stackLogo {
-    max-width: 5rem;
-    margin: 2rem 4rem;
+  .logosSectionContainer {
+    width: 90%;
+  }
+
+  .stackLogo img {
+    width: 4rem;
+    height: auto;
+  }
+  
+  .cssOrCStackLogo img {
+    width: 3rem;
+    height: auto;
   }
 }

@@ -18,7 +18,7 @@ const WebsiteHero = (props: Props) => {
           ></Image>
         </div>
         <div className={styles.textContainer}>
-          <div className={styles.myName}>Ludovic Manga 💻</div>
+          <div className={styles.myName}><span className={styles.myNameText}>Ludovic Manga</span> <span className={styles.myNameEmoji}>💻</span></div>
           <div className={styles.myJob}>Développeur fullstack Javascript</div>
           <p className={styles.myDescription}>
             Bonjour, et enchanté ! 😁

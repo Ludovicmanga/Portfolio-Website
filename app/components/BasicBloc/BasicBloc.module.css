@@ -6,39 +6,53 @@
   display: none;
 }
 
+.textBody {
+  font-size: 2rem;
+  font-style: italic;
+}
+
 .btnContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@media screen and (min-width: 4rem) {
+@media screen and (min-width: 40rem) {
   .container {
     display: flex;
-    padding: 0 4.5rem;
+    padding: 2rem 8rem;
   }
 
   .imgContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 30%;
   }
 
   .img {
-    border-radius: 15px;
     height: 18rem;
     width: 18rem;
   }
 
+  .codingImg {
+    padding: 0rem;
+  }
+
+  .experiencesImg {
+    padding: 1.5rem;
+  }
+
   .textContainer {
-    width: 65%;
-    padding: 2rem 0 2rem 2rem;
+    width: 70%;
+    padding: 1.5rem 0 0 0;
+    margin: 0 0 0 4rem;
   }
 
   .textDetails {
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    padding: 0 6rem 0 0;
   }
 
   .btnContainer {

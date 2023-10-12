@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import styles from "./MyStack.module.css";
 import reactLogo from "@/public/reactWithoutText.png";
@@ -9,6 +11,7 @@ import cssLogo from "@/public/cssLogo.png";
 import phpLogo from "@/public/php.png";
 import cLogo from "@/public/cLogo.png";
 import Image from "next/image";
+import { Avatar, Paper, useMediaQuery } from "@mui/material";
 
 type Props = {};
 
@@ -23,19 +26,28 @@ const MyStack = (props: Props) => {
     phpLogo,
     cLogo,
   ];
+
+  const bigScreenMediaQuery = useMediaQuery('(min-width:40rem)');
+
   return (
-    <div className={styles.container}>
+    <Paper elevation={4} className={styles.container}>
       <div className={styles.logosSectionContainer}>
         {logos.map((logo) => (
-          <Image
+          <Avatar
+            variant="rounded"
             key={logo.src}
-            alt="js-logo"
-            src={logo}
-            className={styles.stackLogo}
-          />
+            className={logo === cssLogo || logo === cLogo ? styles.cssOrCStackLogo : styles.stackLogo}
+            sx={{
+              background: "white",
+              height: bigScreenMediaQuery ? '7rem': '3rem',
+              width: bigScreenMediaQuery ? '7rem': '3rem'
+            }}
+          >
+            <Image alt="language-logo" src={logo} />
+          </Avatar>
         ))}
       </div>
-    </div>
+    </Paper>
   );
 };
 
