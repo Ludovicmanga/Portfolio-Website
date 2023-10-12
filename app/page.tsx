@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <div className={styles.sectionContainer}>
         <div className={styles.sectionTitle} id="my-stack">
-          Ma stack
+          Les langages que je maitrise
         </div>
         <div className={styles.sectionContentContainer}>
           <MyStack />
@@ -31,6 +31,7 @@ export default function Home() {
             Openclassrooms. Depuis, j'ai cofondé une startup, dans laquelle j'ai
             été développeur fullstack."
             btnText="Voir mes expériences"
+            btnDestination='/experiences'
             img={experiencesImg}
             type="experience"
           />
@@ -55,6 +56,7 @@ export default function Home() {
           projets qui me tiennent à coeur, que ce soit dans le cadre
           professionnel ou personnel. Que ce soit seul, ou en groupe."
             btnText="Voir mon portfolio"
+            btnDestination='/portfolio'
             img={portfolioImg}
             type="portfolio"
           />
