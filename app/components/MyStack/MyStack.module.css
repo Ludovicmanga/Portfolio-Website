@@ -13,16 +13,12 @@
   flex-wrap: wrap;
 }
 
-.stackLogo, .cssOrCStackLogo {
+.stackLogo {
   margin: 1rem;
+  cursor: pointer;
 }
 
 .stackLogo img {
-  width: 2rem;
-  height: auto;
-}
-
-.cssOrCStackLogo img {
   width: 2rem;
   height: auto;
 }
@@ -37,7 +33,7 @@
     width: 90%;
   }
 
-  .stackLogo img {
+  .lambdaStackLogo img {
     width: 4rem;
     height: auto;
   }

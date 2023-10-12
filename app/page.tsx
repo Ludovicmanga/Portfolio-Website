@@ -13,13 +13,15 @@ export default function Home() {
         <WebsiteHero />
       </div>
       <div className={styles.sectionContainer}>
-        <div className={styles.sectionTitle}>Ma stack</div>
+        <div className={styles.sectionTitle} id="my-stack">
+          Ma stack
+        </div>
         <div className={styles.sectionContentContainer}>
           <MyStack />
         </div>
       </div>
       <div className={styles.sectionContainer}>
-        <div className={styles.sectionTitle}>
+        <div className={styles.sectionTitle} id="my-experiences">
           Mes expériences & ma formation
         </div>
         <div className={styles.sectionContentContainer}>
@@ -30,18 +32,22 @@ export default function Home() {
             été développeur fullstack."
             btnText="Voir mes expériences"
             img={experiencesImg}
-            type='experience'
+            type="experience"
           />
         </div>
       </div>
       <div className={styles.sectionContainer}>
-        <div className={styles.sectionTitle}>Ma chaine Youtube</div>
+        <div className={styles.sectionTitle} id="youtube">
+          Ma chaine Youtube
+        </div>
         <div className={styles.sectionContentContainer}>
           <MyYoutubeChannel />
         </div>
       </div>
       <div className={styles.sectionContainer}>
-        <div className={styles.sectionTitle}>Mon portfolio</div>
+        <div className={styles.sectionTitle} id="portfolio">
+          Mon portfolio
+        </div>
         <div className={styles.sectionContentContainer}>
           <BasicBloc
             descriptionText="Parce que c'est en forgeant qu'on devient forgeron, pratiquer est
@@ -50,7 +56,7 @@ export default function Home() {
           professionnel ou personnel. Que ce soit seul, ou en groupe."
             btnText="Voir mon portfolio"
             img={portfolioImg}
-            type='portfolio'
+            type="portfolio"
           />
         </div>
       </div>

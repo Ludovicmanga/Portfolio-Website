@@ -1,0 +1,28 @@
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.menu li {
+  cursor: pointer;
+  margin: 2rem 0 0 0;
+}
+
+@media screen and (min-width: 40rem) {
+  .menu {
+    flex-direction: row;
+    width: 29%;
+    margin: 0 2rem 0 0;
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  .menu li {
+    margin: 0;
+  }
+}

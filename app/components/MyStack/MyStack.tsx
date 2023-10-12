@@ -36,7 +36,7 @@ const MyStack = (props: Props) => {
           <Avatar
             variant="rounded"
             key={logo.src}
-            className={logo === cssLogo || logo === cLogo ? styles.cssOrCStackLogo : styles.stackLogo}
+            className={logo === cssLogo || logo === cLogo ? `${ styles.stackLogo} ${styles.cssOrCStackLogo}` :  `${ styles.stackLogo} ${styles.lambdaStackLogo}`}
             sx={{
               background: "white",
               height: bigScreenMediaQuery ? '7rem': '3rem',
