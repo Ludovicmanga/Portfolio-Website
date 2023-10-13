@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <div className={styles.sectionContainer}>
         <div className={styles.sectionTitle} id="my-stack">
-          Les langages que je maitrise
+          Les langages que je maîtrise
         </div>
         <div className={styles.sectionContentContainer}>
           <MyStack />
@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       <div className={styles.sectionContainer}>
         <div className={styles.sectionTitle} id="youtube">
-          Ma chaine Youtube
+          Ma chaîne Youtube
         </div>
         <div className={styles.sectionContentContainer}>
           <MyYoutubeChannel />
