@@ -15,24 +15,24 @@ import { Avatar, Paper, useMediaQuery } from "@mui/material";
 
 type Props = {};
 
-const MyStack = (props: Props) => {
-  const logos = [
-    reactLogo,
-    nodeJsLogo,
-    nextJsLogo,
-    jsLogo,
-    htmlLogo,
-    cssLogo,
-    phpLogo,
-    cLogo,
-  ];
+export const stackLogos = [
+  reactLogo,
+  nodeJsLogo,
+  nextJsLogo,
+  jsLogo,
+  htmlLogo,
+  cssLogo,
+  phpLogo,
+  cLogo,
+];
 
+const MyStack = (props: Props) => {
   const bigScreenMediaQuery = useMediaQuery('(min-width:40rem)');
 
   return (
     <Paper elevation={4} className={styles.container}>
       <div className={styles.logosSectionContainer}>
-        {logos.map((logo) => (
+        {stackLogos.map((logo) => (
           <Avatar
             variant="rounded"
             key={logo.src}
