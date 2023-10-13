@@ -16,7 +16,7 @@
 @media screen and (min-width: 40rem) {
   .menu {
     flex-direction: row;
-    width: 29%;
+    width: 26%;
     margin: 0 2rem 0 0;
     color: white;
     font-size: 0.9rem;

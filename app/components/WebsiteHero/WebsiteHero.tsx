@@ -18,7 +18,10 @@ const WebsiteHero = (props: Props) => {
           ></Image>
         </div>
         <div className={styles.textContainer}>
-          <div className={styles.myName}><span className={styles.myNameText}>Ludovic Manga</span> <span className={styles.myNameEmoji}>💻</span></div>
+          <div className={styles.myName}>
+            <span className={styles.myNameText}>Ludovic Manga</span>{" "}
+            <span className={styles.myNameEmoji}>💻</span>
+          </div>
           <div className={styles.myJob}>Développeur fullstack Javascript</div>
           <p className={styles.myDescription}>
             Bonjour, et enchanté ! 😁
@@ -31,15 +34,21 @@ const WebsiteHero = (props: Props) => {
             vidéos ou encore des projets.
           </p>
           <div className={styles.linksContainer}>
-            <AiFillGithub className={styles.socialNetworkicon} />
-            <AiFillLinkedin
-              color="#0e76a8"
-              className={styles.socialNetworkicon}
-            />
-            <AiFillYoutube
-              color="#FF0000"
-              className={styles.socialNetworkicon}
-            />
+            <a target="_blank" href="https://github.com/Ludovicmanga/">
+              <AiFillGithub className={styles.socialNetworkicon} />
+            </a>
+            <a target="_blank" href="https://linkedin.com/in/ludovic-manga-jocky">
+              <AiFillLinkedin
+                color="#0e76a8"
+                className={styles.socialNetworkicon}
+              />
+            </a>
+            <a target="_blank" href="https://www.youtube.com/@ludovicmanga8241">
+              <AiFillYoutube
+                color="#FF0000"
+                className={styles.socialNetworkicon}
+              />
+            </a>
           </div>
         </div>
       </div>

@@ -12,7 +12,6 @@ type Props = {};
 const page = (props: Props) => {
   const formationsAndExperiences: {
     img: StaticImageData;
-    imgHeight: number;
     title: string;
     companyName: string;
     from: string;
@@ -22,7 +21,6 @@ const page = (props: Props) => {
   }[] = [
     {
       img: dokinLogo,
-      imgHeight: 45,
       title: "CPO & développeur fullstack",
       companyName: "Dokin",
       from: "Mai 2022",
@@ -33,7 +31,6 @@ const page = (props: Props) => {
     },
     {
       img: goodboardLogo,
-      imgHeight: 100,
       title: "Développeur fullstack",
       companyName: "Goodboard",
       from: "Mai 2022",
@@ -44,7 +41,6 @@ const page = (props: Props) => {
     },
     {
       img: openClassRoomsLogo,
-      imgHeight: 100,
       title: "Développeur Web / Php symfony",
       companyName: "Openclassrooms",
       from: "Mai 2020",
@@ -55,7 +51,6 @@ const page = (props: Props) => {
     },
     {
       img: iesegLogo,
-      imgHeight: 50,
       title: "Master en management",
       companyName: "Ieseg",
       from: "Juillet 2013",
@@ -65,6 +60,7 @@ const page = (props: Props) => {
       type: "formation",
     },
   ];
+  
   return (
     <div className={styles.container}>
       <h1 className={styles.titleContainer}>Expériences</h1>

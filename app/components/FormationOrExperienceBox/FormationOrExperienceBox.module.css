@@ -38,6 +38,24 @@
   text-align: center;
 }
 
+.stackContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btnsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.btnsContainer .btn {
+  margin: 1rem 0;
+  width: 50%;
+}
+
 @media screen and (min-width: 40rem) {
   .container {
     flex-direction: row;
@@ -65,7 +83,14 @@
     padding: 0 2.5rem 0 0;
   }
 
-  /* .description {
-    margin: 2rem 0 0 0;
-  } */
+  .btnsContainer {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 2rem 0;
+  }
+
+  .btnsContainer .btn {
+    margin: 0 1rem 0 0;
+    width: auto;
+  }
 }
