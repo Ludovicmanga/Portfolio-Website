@@ -30,9 +30,14 @@ const page = (props: Props) => {
       description: (
         <>
           J&apos;ai cofondé Dokin, ai été développeur fullstack et CPO, pendant
-          1 an. J&apos;ai appliqué la méthode agile, avec ma casquette de CPO,
-          et participé au développement des fonctionnalités, avec mon autre
-          casquette de développeur
+          1 an.
+          <br />
+          La grande majorité de mon temps (90%) était dédiée à ma casquette
+          developpeur: j&apos;ai activement participé à la création, au déploiement
+          et à la maintenance de l&apos;application,  Le reste de mon temps, avec ma
+          casquette de CPO, j&apos;ai oeuvré à mettre en place la meilleure
+          organisation possible pour notre produit. J&apos;ai appliqué la méthode
+          agile, avec des daily meetings, et des sprints hebdomadaires.
         </>
       ),
       type: "expérience",
@@ -48,7 +53,7 @@ const page = (props: Props) => {
         <>
           J&apos;ai cofondé le projet Goodboard, avec Antoine, qui s&apos;occupe
           du marketing. Je suis en charge de la partie développement du
-          logiciel, et à tout ce qui touche à la technique
+          logiciel, et à tout ce qui touche à la technique.
         </>
       ),
       type: "expérience",
@@ -64,7 +69,7 @@ const page = (props: Props) => {
         <>
           J&apos;ai obtenu un diplôme de développeur web (équivalent bac+2 / +3)
           avec Openclassrooms. 20h de cours par semaine, et une dizaine de
-          projets
+          projets.
         </>
       ),
       type: "formation",
@@ -78,8 +83,8 @@ const page = (props: Props) => {
       to: "Juillet 2018",
       description: (
         <>
-          J&apos;ai obtenu mon master, dans l&apos;école de commerce postback
-          numéro 1
+          J&apos;ai obtenu mon master, dans l&apos;école de commerce post bac
+          numéro 1.
         </>
       ),
       type: "formation",
