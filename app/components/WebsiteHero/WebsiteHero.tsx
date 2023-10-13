@@ -28,8 +28,8 @@ const WebsiteHero = (props: Props) => {
             <br />
             Je m’appelle Ludovic Manga, et suis passionné par les technologies
             et le développement web en particulier. Je suis ravi de vous
-            présenter ce site, que j'ai créé pour me présenter et exposer les
-            projets que j’ai realisé. J'ajouterai ici tout ce qui touche au
+            présenter ce site, que j&apos;ai créé pour me présenter et exposer les
+            projets que j’ai realisé. J&apos;ajouterai ici tout ce qui touche au
             contenu que je pourrais produire, que ce soit des articles, des
             vidéos ou encore des projets.
           </p>
